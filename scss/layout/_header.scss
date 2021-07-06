@@ -1,0 +1,11 @@
+.l-header{
+    position: relative;
+    z-index: 1000;
+    height: $header__height--PC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include header__hamburger{
+        height: $header__height--mobile;
+    };
+}

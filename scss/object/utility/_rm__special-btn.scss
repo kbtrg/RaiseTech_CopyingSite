@@ -1,0 +1,7 @@
+.p-header__nav__items{
+    @include header__hamburger{
+        .special-btn {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.p-header__title{
+    a{
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        @include header__hamburger{
+            height: $header__height--mobile;
+            margin-left: 13px;
+        }
+    }
+    img{
+        height: 33px;
+        margin-left: -3px;
+        @include header__hamburger{
+            height: 30px;
+        }
+    }
+    span{
+        font-size: 1.4rem;
+        height: 41px;
+        font-weight: 900;
+        padding-left: 16px;
+        white-space: nowrap;
+        strong{
+            font-size: 1.8rem;
+            font-weight: bolder;
+        }
+        @include header__logo__side{
+            display: none;
+        };
+    }
+}

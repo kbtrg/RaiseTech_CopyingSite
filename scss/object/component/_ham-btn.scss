@@ -1,0 +1,46 @@
+.c-ham-btn{
+    display: none;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    @include header__hamburger{
+        display: block;
+    };
+    &__line{
+        position: absolute;
+        left: 14px;     //３本戦全体の位置
+        height: 2px;    //線の太さ
+        width: 23px;    //線の長さ    
+        background-color: #2498b3;  //線の色
+        transition: all 0.3s;
+        &:nth-of-type(1){
+            top: 15px;
+        }
+        &:nth-of-type(2){
+            top: 24px;
+        }
+        &:nth-of-type(3){
+            top: 33px;
+        }
+    }
+    &.active{   //ハンバーガーボタンがクリックされたら
+        background: #2498b3;
+        transition: all 0.3s;
+        .c-ham-btn__line{
+            background: #fff;
+            transition: all 0.3s;
+            &:nth-of-type(1){
+                transform: rotate(45deg);
+                top: 25px;
+            }
+            &:nth-of-type(2){
+                display: none;
+            }
+            &:nth-of-type(3){
+                transform: rotate(-45deg);
+                top: 25px;
+            }
+        }
+    }
+}

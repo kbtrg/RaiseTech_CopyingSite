@@ -1,0 +1,51 @@
+.p-main__top__sec--black{
+    background: #000;
+    height: 430px;
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: -200px;
+        position: relative;
+        z-index: 700;
+        .content{
+            width: 300px;
+            margin: 0 10px 0 10px;
+            padding: 0 10px 0 10px;
+            @include main__content-description{
+                width: 30%;
+            }
+            .top__sec__icon{
+                width: 230px;
+                height: 230px;
+                font-weight: 10;
+                i{
+                    padding-top: 56px;
+                    -webkit-text-stroke: 3px #fff;
+                }
+            }
+            &__title{
+                font-size: 2.4rem;
+                color: #fff;
+                margin: 0.2em 0 0 0;
+            }
+            &__description{
+                font-size: 1.6rem;
+                color: #fff;
+                margin: 0.5em 0 0 0;
+            }
+        }
+    }
+    @include smart-phone{
+        height: auto;
+        padding: 50px 0;
+        .wrapper{
+            display: block;
+            margin: 0;
+            .content{
+                width: 100%;
+                margin: 30px 0;
+            }
+        }
+    }
+}

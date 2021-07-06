@@ -1,0 +1,46 @@
+.p-main__top__body-box{
+    margin-top: 80px;
+    padding: 43px 40px 19px;
+    border-radius: 10px;
+    text-align: center;
+    background:#fff;
+    img{
+        margin-bottom: 0.5rem;
+        width: 280px;
+    }
+    p{
+        margin: 1.3em 0 0.5em;
+        font-size: 1.6rem;
+        line-height: 28px;
+    }
+    @include smart-phone{
+        position: relative;
+        z-index: 500;
+        top: 160px;
+        margin: 0;
+        padding: 9px 0 13px;
+        height: 160px;
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+        img{
+            display: none;
+        }
+        p{
+            margin: 7px 0  7px 0;
+            font-size: 1.3rem;
+            line-height: 2.1rem;
+            font-family: "Noto Sans JP", arial, sans-serif;
+        }
+        .c-btn--highlight{
+            margin: 15px 0 7px;
+            a{
+                height: 42px;
+                width: 230px;
+                font-size: 1.6rem;
+                padding: 12px 18px;
+                margin: 0 auto 0 auto;
+            }
+        }
+    }
+}

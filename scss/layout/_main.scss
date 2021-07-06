@@ -1,0 +1,41 @@
+.l-main{   
+    .maintop{
+        background: url(../image/bg-hero3.png) no-repeat center center / cover fixed;
+        height: $main-top__height--PC;
+        position: relative;
+        @include smart-phone{
+            height: $main-top__height--smart;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position-y: -25px;
+        }
+        .stacking{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+        .layer1{
+            background: url(../image/bg-hero1.png) no-repeat center center / auto;
+            height: $main-top__height--PC;
+            z-index: 200;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            @include smart-phone{
+                height: $main-top__height--smart;
+                background-size: cover;
+                background-position-y: -25px;
+            }
+        }
+        .layer2{
+            background: url(../image/bg-hero2.png) no-repeat center center / auto ;
+            height: $main-top__height--PC;
+            z-index: 100;
+            @include smart-phone{
+                height: $main-top__height--smart;
+                background-size: cover;
+                background-position-y: -25px;
+            }
+        }
+    }
+}

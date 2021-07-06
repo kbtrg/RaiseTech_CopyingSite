@@ -1,0 +1,31 @@
+$header__logo__side:            1290px;  //ロゴ横の文字消去
+$header__main-menu-padding:     1260px;  //ヘッダーのメインメニュー余白変更 
+$header__hamburger:             1200px;  //ハンバーガーメニュー出現
+$main__content-description:     1035px;  //アイコン下の説明文の幅変更
+$smart-phone:                   767px;   //スマホ版
+
+@mixin header__logo__side{
+    @media (max-width: ($header__logo__side)){
+        @content;
+    }
+}
+@mixin header__main-menu-padding{
+    @media (max-width: ($header__main-menu-padding)){
+        @content;
+    }
+}
+@mixin header__hamburger{
+    @media (max-width: ($header__hamburger)){
+        @content;
+    }
+}
+@mixin main__content-description{
+    @media (max-width: ($main__content-description)){
+        @content;
+    }
+}
+@mixin smart-phone{
+    @media (max-width: ($smart-phone)){
+        @content;
+    }
+}
